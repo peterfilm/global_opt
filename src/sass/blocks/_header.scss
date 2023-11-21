@@ -1,0 +1,160 @@
+.header {
+    min-height: 680px;
+    background: url("assets/img/first_bg.jpg") center center / cover no-repeat;
+    display: flex;
+    justify-content: space-around;
+
+    &__top {
+        padding-top: 23px;
+        max-height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 95px;
+        height: 99px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__items {
+        display: flex;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    &__item {
+        margin: 10px 0px;
+        list-style-type: none;
+        font-size: 15px;
+        line-height: 1.114;
+        border-right: 1px dotted $default-color;
+        padding: 0 10px;
+
+        &:last-child {
+            border-right: none;
+        }
+        
+
+        &-link {
+            color: $default-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: $main-color;
+                text-underline-offset: 10px;
+            }
+        }
+
+    }
+
+    &__call {
+        text-align: right;
+        color: $default-color;
+        font-size: 14px;
+        p {
+            margin: 0;
+        }
+
+        &-tel {
+            font-size: 19px;
+            font-weight: 600;
+            text-decoration: none;
+            color: $default-color;
+
+            &:hover {
+                text-decoration: underline;
+                color: $main-color;
+                text-underline-offset: 10px;
+            }
+
+            
+        }
+    }
+
+    &__titles {
+        margin-top: 10px;
+        h1 {
+            font-size: 24px;
+            font-weight: 300;
+            text-align: center;
+            color: $default-color;
+        }
+
+        h2 {
+            font-size: 60px;
+            font-weight: 600;
+            text-align: center;
+            color: $main-color;
+        }
+
+        h3 {
+            font-size: 34px;
+            font-weight: 600;
+            text-align: center;
+            color: $default-color
+        }
+    }
+
+    &__element {
+        margin: 38px 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        &-line {
+            width: 390px;
+            height: 1px;
+            background-color: $default-color;
+        }
+
+        &-dot {
+            margin: 10px;
+            background-color: $default-color;
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    &__icon {
+        width: 264px;
+        margin-top: 25px;
+        text-align: center;
+        padding: 10px;
+        &-img {
+            margin: 0 auto;
+            height: 60px;
+        }
+        &-text {
+            margin-top: 19px;
+            color: $default-color;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.38;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        margin-top: 43px;
+        padding-bottom: 83px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}

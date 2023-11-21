@@ -1,0 +1,34 @@
+.delivery {
+    padding: 51px 0;
+
+    &__wrapper {
+        margin-top: 37px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__card {
+        width: 360px;
+    }
+
+    &__img {
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 28px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $main-color;
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+    }
+}

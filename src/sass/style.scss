@@ -1,0 +1,34 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'blocks/elements';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/menu_mobile';
+@import 'blocks/advantages';
+@import 'blocks/delivery';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/consultation';
+@import 'blocks/managers';
+@import 'blocks/schema';
+@import 'blocks/testimonials';
+@import 'blocks/questions';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/modal';
+
+@import 'blocks/media';

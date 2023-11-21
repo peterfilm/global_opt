@@ -1,0 +1,30 @@
+.schema {
+    padding: 51px 0 48px 0;
+    background-color: $bg2;
+    min-height: 465px;
+
+    &__wrapper {
+        margin-top: 33px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        color: $main-color;
+    }
+
+    &__text{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__item {
+        width: 250px;
+        min-height: 150px;
+    }
+}

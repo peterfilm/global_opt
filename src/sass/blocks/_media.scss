@@ -1,0 +1,618 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .header {
+        &__call {
+            display: none;
+        }
+
+        &__item {
+            &-link {
+                font-size: 12px;
+            }
+        }
+
+        &__titles {
+            margin-top: 30px;
+            h2 {
+                font-size: 45px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+
+        &__element {
+            &-line {
+                width: 45%;
+            }
+        }
+
+        &__icon {
+            width: 240px;
+        }
+    }
+    .button {
+        &__160 {
+            width: 120px;
+        }
+    }
+
+    .advantages {
+        &__item {
+            max-width: 450px;
+        }
+    }
+
+    .delivery {
+        &__card {
+            width: 300px;
+        }
+    }
+
+    .price {
+        &__wrapper {
+            margin: 0 auto;
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .header {
+
+        &__icons {
+            width: 720px;
+
+        }
+
+        &__icon {
+            width: 300px;
+        }
+
+        &__titles {
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 35px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .advantages {
+        &__item {
+            max-width: 350px;
+        }
+    }
+
+    .delivery {
+        &__wrapper {
+            justify-content: center;
+        }
+        &__img {
+            width: 30%;
+            margin-right: 30px;
+            transform: translateY(32px);
+        }
+        &__card {
+            margin: 30px;
+            display: flex;
+            width: 100%;
+        }
+
+        &__textblock {
+            width: 70%;
+            text-align: left;
+        }
+
+        &__text{
+            text-align: left;
+        }
+
+
+        &__subtitle {
+            margin-top: 0;
+        }
+    }
+
+    .block__slogan {
+        width: 600px;
+    }
+
+    .consultation {
+        .block__input {
+            width: 210px;
+        }
+    }
+
+    .questions {
+        &__box {
+            width: 90%;
+        }
+
+        .block__input {
+            width: 200px;
+        }
+
+        .block__textarea {
+            width: 610px;
+        }
+    }
+
+    .schema {
+        &__wrapper {
+            gap: 20px
+        }
+    }
+
+    .modal {
+        &__box {
+            width: 90%;
+        }
+
+        .block__input {
+            width: 200px;
+        }
+
+        .block__textarea {
+            width: 610px;
+        }
+    }
+
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .header {
+        &__top {
+            justify-content: flex-start;
+        }
+        &__menu {
+            display: none;
+        }
+
+        .button {
+            &__160 {
+                width: 300px;
+                transform: translateX(20%);
+
+            }
+        }
+
+        &__icons {
+            width: 100%;
+        }
+        &__icon {
+            width: 50%;
+        }
+
+        .hamburger {
+            display: block;
+            position: fixed;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 12px;
+            z-index: 4;
+            box-shadow: 
+                inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+            &:hover {
+                cursor: pointer;
+            }
+            span {
+                display: block ;
+                height: 2px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 2px;
+                transition: 0.5s all;
+            }
+        }
+        .show {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg)
+                }
+            }
+        }
+    }
+
+    .advantages {
+        &__wrapper {
+            justify-content: center;
+        }
+        &__item {
+            max-width: 450px;
+        }
+    }
+
+    .delivery {
+        &__wrapper {
+            margin-top: 0;
+            width: 100%;
+        }
+
+        &__card {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        &__img {
+            width: 100%;
+            transform: none;
+            margin: 0 auto;
+        }
+
+        &__textblock {
+            width: 100%;
+        }
+
+        &__subtitle {
+            margin-top: 30px;
+        }
+    }
+
+    .block__slogan {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .price {
+        &__wrapper {
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        &__card {
+            width: 100%;
+        }
+
+        .button {
+            width: 50%;
+        }
+    }
+
+    .consultation {
+        .block__input {
+            width: 80%;
+        }
+        &__box {
+            margin-top: 65px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .questions {
+        // margin-top: -50px;
+
+        &__form {
+            width: 100%;
+            padding: 10px 0;
+            grid-template-areas: 
+            "name"
+            "tel"
+            "email"
+            "textarea"
+            "submit";
+            justify-content: space-around;
+        }
+
+
+        &__box {
+            width: 90%;
+        }
+
+        .block__input {
+            width: 400px;
+        }
+
+        .block__textarea {
+            margin-top: 15px;
+            width: 400px;
+        }
+
+        #quest_submit {
+            margin-top: 15px;
+        }
+    }
+
+    .modal {
+        // margin-top: -50px;
+
+        &__form {
+            width: 100%;
+            padding: 10px 0;
+            grid-template-areas: 
+            "name"
+            "tel"
+            "email"
+            "textarea"
+            "submit";
+            justify-content: space-around;
+        }
+
+
+        &__box {
+            width: 90%;
+        }
+
+        .block__input {
+            width: 400px;
+        }
+
+        .block__textarea {
+            margin-top: 15px;
+            width: 400px;
+        }
+
+        #quest_submit {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .header {
+        &__icons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__icon {
+            width: 350px;
+        }
+
+        &__titles {
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 40px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        .button {
+            &__160 {
+                width: 200px;
+                transform: translateX(50px);
+
+            }
+        }
+    }
+
+    .advantages {
+        &__wrapper {
+            padding: 0 20px;
+        }
+        &__item {
+            max-width: 100%;
+        }
+    }
+
+    .block__title {
+        font-size: 18px;
+    }
+    .block__slogan {
+        font-size: 14px;
+    }
+
+    .agent {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .questions {
+
+        &__box {
+            width: 100%;
+        }
+
+        .block__input {
+            width: 370px;
+        }
+
+        .block__textarea {
+            margin-top: 15px;
+            width: 370px;
+        }
+    }
+
+    .modal {
+
+        &__box {
+            width: 100%;
+        }
+
+        .block__input {
+            width: 370px;
+        }
+
+        .block__textarea {
+            margin-top: 15px;
+            width: 370px;
+        }
+    }
+
+    .footer {
+        &__left {
+            width: 100%;
+            p {
+                margin-left: 15px;
+            }
+        }
+
+        &__right {
+            margin-top: 15px;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .button {
+                margin-left: 15px;
+            }
+        }
+
+        &__links {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .header {
+        &__icon {
+            width: 100%;
+        }
+
+        .button {
+            &__160 {
+                width: 150px;
+                transform: translateX(5%);
+
+            }
+        }
+    }
+
+    .advantages {
+        &__item {
+            flex-direction: column;
+
+            &-img {
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .agent {
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .questions {
+
+        .block__input {
+            width: 280px;
+        }
+
+        .block__textarea {
+            margin-top: 15px;
+            width: 280px;
+        }
+    }
+
+    .modal {
+
+        .block__input {
+            width: 280px;
+        }
+
+        .block__textarea {
+            margin-top: 15px;
+            width: 280px;
+        }
+    }
+
+}
+
+@media (max-width: 320px) {
+    .header {
+        .button {
+            font-size: 10px;
+            &__160 {
+                width: 130px;
+                transform: translateX(5%);
+
+            }
+        }
+    }
+
+    .questions {
+
+        .block__input {
+            width: 200px;
+        }
+
+        .block__textarea {
+            margin-top: 15px;
+            width: 200px;
+        }
+    }
+
+    .modal {
+
+        &__title {
+            font-size: 12px;
+            transform: translateY(50%);
+
+            span {
+                font-size: 14px;
+            }
+        }
+
+        .block__input {
+            width: 200px;
+        }
+
+        .block__textarea {
+            margin-top: 15px;
+            width: 200px;
+        }
+        &__form {
+            .status.button {
+                font-size: 10px;
+            }
+        }
+    }
+    .questions {
+        &__form {
+            .status.button {
+                font-size: 10px;
+            }
+        }
+    }
+    
+
+}

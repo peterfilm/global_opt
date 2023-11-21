@@ -1,0 +1,128 @@
+$LEFT_WIDTH: 25%;
+$CENTER_WIDTH: 50%;
+$RIGHT_WIDTH: 25%;
+
+.testimonials {
+    padding: 51px 0 0 0;
+    min-height: 490px;
+
+    &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 80%;
+    }
+    &__arrows {
+        position: absolute;
+        margin: 35px auto 0;
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left, &__right {
+        font-size: 60px;
+        transform: scaleX(.3);
+        width: 18px;
+        height: 50px;
+        z-index: 2;
+        color: $main-color;
+        &:hover {
+            color: $dark-color;
+            cursor: pointer;
+            }
+    }
+
+    &__item {
+        transform: translateX(10px);
+        margin-top: 31px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img {
+        border-radius: 100%;
+        width: 114px;
+        height: 114px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__name {
+        margin-top: 19px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__text {
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.57;
+    }
+
+    &__next {
+        animation: t_next 0.5s ease;
+        opacity: 0.3;
+        transform: translateX(50px) scale(.7);
+        width: $RIGHT_WIDTH;
+    }
+
+    &__previos {
+        animation: t_previos 0.5s ease;
+        opacity: 0.3;
+        transform: translateX(-50px) scale(.7);
+        width: $LEFT_WIDTH;
+    }
+
+    &__active {
+        animation: t_active 0.5s ease;
+        opacity: 1;
+        transform: translateX(10px) scale(1);
+        width: $CENTER_WIDTH;
+        
+    }
+
+    .t_mini {
+        animation: t_mini 0.5s ease;
+    }
+}
+
+@keyframes t_previos { 
+    from {
+        transform: translateX(100px) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-50px) scale(0.7);
+        opacity: 0.3;
+    }
+}
+
+@keyframes t_next { 
+    from {
+        transform: translateX(-100px) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(50px) scale(0.7);
+        opacity: 0.3;
+    }
+}
+
+
+@keyframes t_active { 
+    from {
+        transform: translateX(0px) scale(0.7);
+        opacity: 0.3;
+    }
+    to {
+        transform: translateX(10px) scale(1);
+        opacity: 1;
+    }
+}
